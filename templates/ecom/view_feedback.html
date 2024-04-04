@@ -1,7 +1,4 @@
-{% extends 'ecom/admin_base.html' %}
-{% load static %}
-{% block content %}
-
+{% extends 'ecom/admin_base.html' %} {% load static %} {% block content %}
 
 <head>
   <style media="screen">
@@ -32,26 +29,18 @@
       color: black;
     }
   </style>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 </head>
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
 
-<br><br><br><br>
-<h2 style="text-align:center; color:blue;">Feedbacks By User</h2>
-<hr>
+<br /><br /><br /><br />
+<h2 style="text-align: center; color: blue">Feedbacks By User</h2>
+<hr />
 {%for f in feedbacks%}
 <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  <strong>{{f.date}} ||By : {{f.name}} </strong><br> {{f.feedback}}
+  <span class="closebtn" onclick="this.parentElement.style.display='none';"
+    >&times;</span
+  >
+  <strong>{{f.date}} ||By : {{f.name}} </strong><br />
+  {{f.feedback}}
 </div>
-{%endfor%}
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
-{% endblock content %}
+{%endfor%} {% endblock content %}

@@ -98,8 +98,7 @@
   </head>
 
   <body style="background-color: #b3e5fc">
-    {%if request.user.is_authenticated%} {% include "ecom/customer_navbar.html"
-    %} {%else%} {% include "ecom/navbar.html" %} {%endif%}
+    {%if request.user.is_authenticated%} {% include "ecom/customer_navbar.html"%} {%else%} {% include "ecom/navbar.html" %} {%endif%}
 
     <center>
       <h3 class="alert alert-success">Send Us Your Valuable Feedback !</h3>
@@ -114,8 +113,7 @@
 
           <li>
             <label>Your Feedback <span class="required">*</span></label>
-            {% render_field feedbackForm.feedback id="field5" class="field-long
-            field-textarea" %}
+            {% render_field feedbackForm.feedback id="field5" class="field-long field-textarea" %}
           </li>
           <li>
             <input type="submit" value="Send Feedback" />

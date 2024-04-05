@@ -1,5 +1,4 @@
-{% extends 'ecom/admin_base.html' %} {% load widget_tweaks %} {% block content
-%}
+{% extends 'ecom/admin_base.html' %} {% load widget_tweaks %} {% block content%}
 
 <head>
   <style media="screen">
@@ -60,8 +59,7 @@
         <p>Update Status Of Order</p>
       </div>
       <div class="form-content">
-        {% render_field orderForm.status class="form-control"
-        placeholder="Address" %}
+        {% render_field orderForm.status class="form-control" placeholder="Address" %}
       </div>
     </div>
   </div>

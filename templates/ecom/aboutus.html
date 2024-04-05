@@ -18,8 +18,7 @@
   </head>
 
   <body style="background-color: #b3e5fc">
-    {%if request.user.is_authenticated%} {% include "ecom/customer_navbar.html"
-    %} {%else%} {% include "ecom/navbar.html" %} {%endif%}
+    {%if request.user.is_authenticated%} {% include "ecom/customer_navbar.html"%} {%else%} {% include "ecom/navbar.html" %} {%endif%}
     <br /><br /><br />
     <h3 style="text-align: center">
       “I don’t create companies for the sake of creating companies, but to get
